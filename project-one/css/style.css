@@ -17,14 +17,49 @@ li{
   list-style: none;
 }
 .level{
-  position: absolute;
+  position: relative;
   border: 4px solid black;
   height: 500px;
   width: 1000px;
 }
-.square{
-  float:  right;
-  border: 3px solid black;
-  height: 75px;
-  width:  75px;
+.firstsquare{
+  position: absolute;
+  top: 125px;
+  left: 300px;
+  border:2px solid black;
+}
+
+.secondsquare{
+  position: absolute;
+  top: 125px;
+  left: 425px;
+  border:2px solid black;
+}
+.thirdsquare{
+  position:absolute;
+  top: 125px;
+  left: 550px;
+  border:2px solid black;
+}
+.fourthsquare{
+  position: absolute;
+  top: 250px;
+  left: 300px;
+  border:2px solid black;
+}
+.fithsquare{
+  position: absolute;
+  top: 250px;
+  left: 425px;
+  border:2px solid black;
+}
+.sixthsquare{
+  position: absolute;
+  top: 250px;
+  left: 550px;
+  border:2px solid black;
+}
+#square{
+  height: 125px;
+  width: 125px;
 }
