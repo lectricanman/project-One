@@ -1,0 +1,13 @@
+Ok so right now we've got this:
+        1: a level space that consists of 6 white divs (squares)
+        2: a function that creates these squares and adds click events to them
+        3: a function that turns random squares red
+        NOTE: number 3 over here isn't done. We need to set a delay to turn the
+        squares back to white so that you know, it's actually a game?
+So, what we need is a time out function set to play once per second
+the time out will clear once a "time" variable is set to zero
+we also need a delay function which will call makeRed(); every: .6-.8 seconds?
+finally we need a check when the timer reaches zero to see if the player was in
+fact able to meet the goal for the level. Oh and also I'm still unsure whether
+it is better to punish misclicks with loss of points or time. depending on how
+much time is subtracted we might end up with less potential points over all.
