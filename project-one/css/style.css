@@ -60,6 +60,7 @@ li{
   border:2px solid black;
 }
 #square{
+  background-color: white;
   height: 125px;
   width: 125px;
 }

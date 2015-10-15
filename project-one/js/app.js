@@ -10,8 +10,17 @@ var makeLevelOne = function() {
     square.attr('id','square');
     square.appendTo('.level');
     $('.'+sqrNum).click(function(){
-      $(this).css('background-color','white');
-      console.log('test');
+      if(($(this).css('background-color')) === 'rgb(255, 0, 0)'){
+        $(this).css('background-color','white');
+        console.log('up');
+        score+= 100;
+        console.log(score);
+      }
+       else if(($(this).css('background-color')) ==='rgb(255, 255, 255)'){
+         score = score - 100;
+         console.log(score);
+       }
+      console.log('click');
     });
   }
 }
