@@ -3,6 +3,7 @@ body{
 }
 .topbar{
   height: 45px;
+  width:  100%;
   display: inline;
   border-bottom: 2px solid black;
 }
@@ -22,6 +23,7 @@ li{
   width: 1000px;
 }
 .square{
+  float:  right;
   border: 3px solid black;
   height: 75px;
   width:  75px;
