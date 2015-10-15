@@ -1,15 +1,15 @@
 
 var Goal = 1000;
 var score = 0;
-var squares = ['first-square','second-square','third-square','fourth-square','fith-square','sixth-square']
+var squares = ['square-one','square-two','square-three','square-four','square-five','square-six']
 var makeLevelOne = function() {
   for(var i = 0;i < 6; i++){
     var square = $('<div></div>');
     var sqrNum = squares[i];
-    square.addClass(sqrNum);
-    square.attr('id','square');
+    square.addClass('square');
+    square.attr('id',sqrNum);
     square.appendTo('.level');
-    $('.'+sqrNum).click(function(){
+    $('#'+sqrNum).click(function(){
       if(($(this).css('background-color')) === 'rgb(255, 0, 0)'){
         $(this).css('background-color','white');
         console.log('up');
@@ -28,7 +28,7 @@ var makeLevelOne = function() {
 
 var makeRed = function(){
   var sqrNum = squares[Math.floor(Math.random() * (6 - 0)) + 0];
-  $('.'+sqrNum).css('background-color','red');
+  $('#'+sqrNum).css('background-color','red');
 }
 
 

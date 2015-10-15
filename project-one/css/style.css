@@ -22,44 +22,44 @@ li{
   height: 500px;
   width: 1000px;
 }
-.first-square{
+#square-one{
   position: absolute;
   top: 125px;
   left: 300px;
   border:2px solid black;
 }
 
-.second-square{
+#square-two{
   position: absolute;
   top: 125px;
   left: 425px;
   border:2px solid black;
 }
-.third-square{
+#square-three{
   position:absolute;
   top: 125px;
   left: 550px;
   border:2px solid black;
 }
-.fourth-square{
+#square-four{
   position: absolute;
   top: 250px;
   left: 300px;
   border:2px solid black;
 }
-.fith-square{
+#square-five{
   position: absolute;
   top: 250px;
   left: 425px;
   border:2px solid black;
 }
-.sixth-square{
+#square-six{
   position: absolute;
   top: 250px;
   left: 550px;
   border:2px solid black;
 }
-#square{
+.square{
   background-color: white;
   height: 125px;
   width: 125px;
