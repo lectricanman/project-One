@@ -22,38 +22,38 @@ li{
   height: 500px;
   width: 1000px;
 }
-.firstsquare{
+.first-square{
   position: absolute;
   top: 125px;
   left: 300px;
   border:2px solid black;
 }
 
-.secondsquare{
+.second-square{
   position: absolute;
   top: 125px;
   left: 425px;
   border:2px solid black;
 }
-.thirdsquare{
+.third-square{
   position:absolute;
   top: 125px;
   left: 550px;
   border:2px solid black;
 }
-.fourthsquare{
+.fourth-square{
   position: absolute;
   top: 250px;
   left: 300px;
   border:2px solid black;
 }
-.fithsquare{
+.fith-square{
   position: absolute;
   top: 250px;
   left: 425px;
   border:2px solid black;
 }
-.sixthsquare{
+.sixth-square{
   position: absolute;
   top: 250px;
   left: 550px;
