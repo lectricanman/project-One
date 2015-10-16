@@ -7,10 +7,10 @@ body{
   display: inline;
 }
 .game-space{
-position:relative;
-border-top: 2px solid black;
-height: 550px;
-width: 100%;
+  position:relative;
+  border-top: 2px solid black;
+  height: 550px;
+  width: 100%;
 }
 .game-info{
   position: absolute;
@@ -20,6 +20,7 @@ width: 100%;
 }
 li{
   list-style: none;
+  font-size: 30px;
 }
 .level{
   position: relative;
