@@ -14,6 +14,15 @@ var makeLevelOne = function() {
   for(var i = 0;i < 6; i++){
     var square = $('<div></div>');
     var sqrNum = squares[i];
+    if(i<3){
+      square.css('top',125);
+      square.css('left',(i*125) +300);
+    }
+    else if(i>=3){
+      var j = i-3;
+      square.css('top',250);
+      square.css('left',(j*125)+300);
+    }
     square.addClass('square');
     square.attr('id',sqrNum);
     square.appendTo('.level');
