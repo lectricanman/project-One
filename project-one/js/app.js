@@ -6,6 +6,7 @@ var score = 0;
 var time;
 var timerId;
 var redId;
+var butt;
 var squares = ['square-one','square-two','square-three','square-four','square-five','square-six']
 var makeLevelOne = function() {
   time = 30;
@@ -86,15 +87,18 @@ var checkWin = function(){
   if (score >= Goal){
     console.log('Congraturations');
     alert('GOOD JOB');
+    butt.appendTo('.topbar');
   }
   else{
     console.log('try again');
     alert('GOD TRY GUY...');
+    butt.appendTo('.topbar');
   }
 }
 
   $('.start').click(function(){
     console.log('clickstart');
+    butt = $('button').detach();
     makeLevelOne();
     window.setTimeout(function(){
       playLevelOne();
