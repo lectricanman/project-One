@@ -2,12 +2,22 @@ Ok so right now we've got this:
         1: a level space that consists of 6 white divs (squares)
         2: a function that creates these squares and adds click events to them
         3: a function that turns random squares red
-        NOTE: number 3 over here isn't done. We need to set a delay to turn the
-        squares back to white so that you know, it's actually a game?
+      NEVERMIND  NOTE: number 3 over here isn't done.NEVER MIND We need to set a delay to turn the
+        squares back to wNEVERMINDhite so that you know, it's actually a game?NEVER MIND
+        4: a working start button that creates our 1st level and plays it on a delay
+        NOTE: number 4 does not include a delay to the makeRed() function that would offset the timing in which
+        new red squares would apear. not sure if that's actually a good idea or not.
 So, what we need is a time out function set to play once per second
 the time out will clear once a "time" variable is set to zero
+
 we also need a delay function which will call makeRed(); every: .6-.8 seconds?
+
 finally we need a check when the timer reaches zero to see if the player was in
 fact able to meet the goal for the level. Oh and also I'm still unsure whether
 it is better to punish misclicks with loss of points or time. depending on how
 much time is subtracted we might end up with less potential points over all.
+
+
+After all of this we should be able to add in more levels. Whether or not I should be focussed more on
+adding game elements/difficulty via hard coding new levels (structured gameplay) or focus on refactoring my
+code so I can create a system where I don't need to define as much css
