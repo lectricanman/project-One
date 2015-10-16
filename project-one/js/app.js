@@ -3,8 +3,12 @@ var levelGoal = [1500,2000,2500];
 var currentGoal = 1500;
 var Goal = currentGoal;
 var score = 0;
+var time;
 var squares = ['square-one','square-two','square-three','square-four','square-five','square-six']
 var makeLevelOne = function() {
+  time = 30;
+  $('#time-remaining').text('Time: '+time);
+  $('#level-goal').text('Goal: '+Goal);
   for(var i = 0;i < 6; i++){
     var square = $('<div></div>');
     var sqrNum = squares[i];
@@ -33,7 +37,7 @@ var makeRed = function(){
   $('#'+sqrNum).css('background-color','red');
   window.setTimeout(function(){
     makeWhite(sqrNum);
-  }, 700);
+  }, 800);
 }
 var makeWhite = function(sqrNum){
    $('#'+sqrNum).css('background-color','white');
@@ -51,7 +55,7 @@ var playLevelOne = function(){
     makeRed();
   },500);
 }
-
+var set
 
   $('.start').click(function(){
     console.log('clickstart');
