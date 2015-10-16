@@ -4,6 +4,8 @@ var currentGoal = 1500;
 var Goal = currentGoal;
 var score = 0;
 var time;
+var timerId;
+var redId;
 var squares = ['square-one','square-two','square-three','square-four','square-five','square-six']
 var makeLevelOne = function() {
   time = 30;
@@ -51,11 +53,33 @@ var displayScore = function(){
 
 ////////////////////
 var playLevelOne = function(){
-  window.setInterval(function(){
+  redId=window.setInterval(function(){
     makeRed();
   },500);
+  window.setTimeout(function(){
+    setTimer();
+  },500);
 }
-var set
+var setTimer = function(){
+  timerId = window.setInterval(function(){
+    time = time -1;
+    $('#time-remaining').text('Time: '+time);
+    if (time === 0){
+      window.clearTimeout(timerId);
+      window.clearTimeout(redId);
+      checkWin();
+    }
+  },1000);
+}
+
+var checkWin = function(){
+  if (score >= Goal){
+    console.log('gongrats');
+  }
+  else{
+    console.log('try again');
+  }
+}
 
   $('.start').click(function(){
     console.log('clickstart');
