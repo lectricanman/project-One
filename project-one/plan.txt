@@ -17,7 +17,15 @@ fact able to meet the goal for the level. Oh and also I'm still unsure whether
 it is better to punish misclicks with loss of points or time. depending on how
 much time is subtracted we might end up with less potential points over all.
 
+BOOM DONE except for that points thing and the random time stuff
 
-After all of this we should be able to add in more levels. Whether or not I should be focussed more on
-adding game elements/difficulty via hard coding new levels (structured gameplay) or focus on refactoring my
-code so I can create a system where I don't need to define as much css
+
+After all of this we should be able to add in more levels.
+
+OK
+level 2 im thinking more squares with no borders and give the background a click event
+that removes time.
+
+
+NOTE: here's an Idea! use detach to get rid of the the button untill it's ready to be used again
+this way we don't have to re-make it or anything

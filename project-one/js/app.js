@@ -76,6 +76,7 @@ var setTimer = function(){
     if (time === 0){
       window.clearTimeout(timerId);
       window.clearTimeout(redId);
+      $('.square').remove();
       checkWin();
     }
   },1000);
@@ -83,7 +84,7 @@ var setTimer = function(){
 
 var checkWin = function(){
   if (score >= Goal){
-    console.log('gongrats');
+    console.log('Congraturations');
     alert('GOOD JOB');
   }
   else{
