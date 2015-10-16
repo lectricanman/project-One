@@ -25,13 +25,19 @@ var makeLevelOne = function() {
   }
 }
 
+var redDelay;
 
 var makeRed = function(){
   var sqrNum = squares[Math.floor(Math.random() * (6 - 0)) + 0];
   $('#'+sqrNum).css('background-color','red');
+  window.setTimeout(function(){
+    makeWhite(sqrNum);
+  }, 3000);
 }
+var makeWhite = function(sqrNum){
+   $('#'+sqrNum).css('background-color','white');
+ }
 
 
 //calling functions
 makeLevelOne();
-//addClick();

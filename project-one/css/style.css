@@ -22,6 +22,11 @@ li{
   height: 500px;
   width: 1000px;
 }
+.square{
+  background-color: white;
+  height: 125px;
+  width: 125px;
+}
 #square-one{
   position: absolute;
   top: 125px;
@@ -58,9 +63,4 @@ li{
   top: 250px;
   left: 550px;
   border:2px solid black;
-}
-.square{
-  background-color: white;
-  height: 125px;
-  width: 125px;
 }
