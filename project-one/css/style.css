@@ -7,10 +7,10 @@ body{
   display: inline;
 }
 .game-space{
-position:relative;
-border-top: 2px solid black;
-height: 550px;
-width: 100%;
+  position:relative;
+  border-top: 2px solid black;
+  height: 550px;
+  width: 100%;
 }
 .game-info{
   position: absolute;
@@ -20,6 +20,7 @@ width: 100%;
 }
 li{
   list-style: none;
+  font-size: 30px;
 }
 .level{
   position: relative;
@@ -29,44 +30,9 @@ li{
   width: 1000px;
 }
 .square{
+  position: absolute;
+  border:2px solid black;
   background-color: white;
   height: 125px;
   width: 125px;
-}
-#square-one{
-  position: absolute;
-  top: 125px;
-  left: 300px;
-  border:2px solid black;
-}
-
-#square-two{
-  position: absolute;
-  top: 125px;
-  left: 425px;
-  border:2px solid black;
-}
-#square-three{
-  position:absolute;
-  top: 125px;
-  left: 550px;
-  border:2px solid black;
-}
-#square-four{
-  position: absolute;
-  top: 250px;
-  left: 300px;
-  border:2px solid black;
-}
-#square-five{
-  position: absolute;
-  top: 250px;
-  left: 425px;
-  border:2px solid black;
-}
-#square-six{
-  position: absolute;
-  top: 250px;
-  left: 550px;
-  border:2px solid black;
 }
