@@ -1,13 +1,14 @@
 
-var levelGoal = [1500,2000,2500];
-var currentGoal = 1500;
-var Goal = currentGoal;
+var Goal = 1500;
 var score = 0;
 var time;
 var timerId;
 var redId;
 var butt;
 var squares = ['square-one','square-two','square-three','square-four','square-five','square-six']
+//makes elements for level 1
+/*creates 6 white squares in a grid, adds click events to the square
+that either adds to score or subtracts based on red/white */
 var makeLevelOne = function() {
   time = 30;
   $('#time-remaining').text('Time: '+time);
@@ -44,6 +45,8 @@ var makeLevelOne = function() {
     });
   }
 }
+
+//turns random squares red during level 1 and calls makeWhite();
 var makeRed = function(){
   var sqrNum = squares[Math.floor(Math.random() * (6 - 0)) + 0];
   $('#'+sqrNum).css('background-color','red');
@@ -51,9 +54,11 @@ var makeRed = function(){
     makeWhite(sqrNum);
   }, 800);
 }
+//turns squares white
 var makeWhite = function(sqrNum){
    $('#'+sqrNum).css('background-color','white');
  }
+ //displays the score
 var displayScore = function(){
   $('#player-score').text('score: '+score);
 }
@@ -62,6 +67,8 @@ var displayScore = function(){
 
 
 ////////////////////
+/* this function automates the makeRed() function every
+half second and calls setTimer*/
 var playLevelOne = function(){
   redId=window.setInterval(function(){
     makeRed();
@@ -70,6 +77,8 @@ var playLevelOne = function(){
     setTimer();
   },500);
 }
+// sets the timer and counts down to 0, removes all squares from the board
+// when the timer hits 0
 var setTimer = function(){
   timerId = window.setInterval(function(){
     time = time -1;
@@ -83,6 +92,8 @@ var setTimer = function(){
   },1000);
 }
 
+//verifies if the player meets the level goal before the time ran out
+//and displays an appropriate alert
 var checkWin = function(){
   if (score >= Goal){
     console.log('Congraturations');
