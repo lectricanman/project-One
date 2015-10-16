@@ -75,9 +75,11 @@ var setTimer = function(){
 var checkWin = function(){
   if (score >= Goal){
     console.log('gongrats');
+    alert('GOOD JOB');
   }
   else{
     console.log('try again');
+    alert('GOD TRY GUY...');
   }
 }
 
