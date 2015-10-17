@@ -10,7 +10,7 @@ var squares = ['square-one','square-two','square-three','square-four','square-fi
 /*creates 6 white squares in a grid, adds click events to the square
 that either adds to score or subtracts based on red/white */
 var makeLevelOne = function() {
-  time = 30;
+  time = 20;
   $('#time-remaining').text('Time: '+time);
   $('#level-goal').text('Goal: '+Goal);
   for(var i = 0;i < 6; i++){
