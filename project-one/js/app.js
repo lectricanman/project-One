@@ -11,6 +11,7 @@ var squares = ['square-one','square-two','square-three','square-four','square-fi
 that either adds to score or subtracts based on red/white */
 var makeLevelOne = function() {
   time = 20;
+  displayScore();
   $('#time-remaining').text('Time: '+time);
   $('#level-goal').text('Goal: '+Goal);
   for(var i = 0;i < 6; i++){
