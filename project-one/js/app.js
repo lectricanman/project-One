@@ -1,11 +1,14 @@
-
+var totalScore = 0;
 var Goal = 1500;
 var score = 0;
 var time;
 var timerId;
 var redId;
 var butt;
-var squares = ['square-one','square-two','square-three','square-four','square-five','square-six']
+var squares = ['square-one','square-two','square-three','square-four','square-five','square-six'];
+var levelNum = 1;
+var xPlaces = [0,100,200,300,400,500,600,700,800,900];
+var yPlaces = [0,100,200,300,400];
 //makes elements for level 1
 /*creates 6 white squares in a grid, adds click events to the square
 that either adds to score or subtracts based on red/white */
@@ -32,12 +35,14 @@ var makeLevelOne = function() {
       if(($(this).css('background-color')) === 'rgb(255, 0, 0)'){
         $(this).css('background-color','white');
         console.log('up');
-        score+= 100;
+        score += 100;
+        totalScore += 100;
         displayScore();
         console.log(score);
       }
        else if(($(this).css('background-color')) ==='rgb(255, 255, 255)'){
          score = score - 100;
+         totalScore = totalScore - 100;
          displayScore();
          console.log(score);
        }
@@ -76,6 +81,27 @@ var playLevelOne = function(){
   window.setTimeout(function(){
     setTimer();
   },500);
+}
+var playLevelTwo = function(){
+  $('level').click(function(){
+    score = score - 100;
+    displayScore();
+  });
+}
+var makeRandom = function(){
+  var x = xPlaces[Math.floor(Math.random() * 10)];
+  var y = yPlaces[Math.floor(Math.random() * 5)];
+  var randSquare = $('div').addClass('randSquare').css('top',y+'px').css('left',x+'px');
+  randSquare.click(function(){
+    score + 100;
+    totalScore += 100;
+    displayScore();
+    $(this).remove();
+  });
+  window.setTimeout(function(){
+    $(this).remove();
+  },700);
+  randSquare.appendTo('level');
 }
 // sets the timer and counts down to 0, removes all squares from the board
 // when the timer hits 0

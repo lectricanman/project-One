@@ -36,3 +36,9 @@ li{
   height: 125px;
   width: 125px;
 }
+.randSquare{
+  position: absolute;
+  background-color: red;
+  height: 100px;
+  width: 100px;
+}
