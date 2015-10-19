@@ -91,7 +91,7 @@ var playLevelTwo = function(){
 var makeRandom = function(){
   var x = xPlaces[Math.floor(Math.random() * 10)];
   var y = yPlaces[Math.floor(Math.random() * 5)];
-  var randSquare = $('div').addClass('randSquare').css('top',y+'px').css('left',x+'px');
+  var randSquare = $('<div></div>').addClass('randSquare').css('top',y+'px').css('left',x+'px');
   randSquare.click(function(){
     score + 100;
     totalScore += 100;
@@ -101,7 +101,7 @@ var makeRandom = function(){
   window.setTimeout(function(){
     $(this).remove();
   },700);
-  randSquare.appendTo('level');
+  randSquare.appendTo('.level');
 }
 // sets the timer and counts down to 0, removes all squares from the board
 // when the timer hits 0
