@@ -108,8 +108,8 @@ var makeRandom = function(){
   var y = yPlaces[Math.floor(Math.random() * 5)];
   var randSquare = $('<div></div>').addClass('randSquare').css('top',y+'px').css('left',x+'px');
   randSquare.click(function(){
-    score += 100;
-    totalScore += 100;
+    score += 200;
+    totalScore += 200;
     displayScore();
     $(this).remove();
   });
